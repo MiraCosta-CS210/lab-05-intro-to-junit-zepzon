@@ -24,7 +24,9 @@ public class SumNumbers {
      *   If the sum is an odd number, then return 0 for “false.”
      */
     public int sumIsEven(int a, int b) {
-        if((a+b) % 2 == 2) {
+        // The original logic was wrong because with modulus the result
+        //can only be one or zero so making it equal to 2 is wrong
+        if((a+b) % 2 == 0) {
             return 1;
         } else {
             return 0;

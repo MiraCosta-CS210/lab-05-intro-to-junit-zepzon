@@ -1,3 +1,4 @@
+
 /*
  * LAB 05: Intro to JUnit (PART 1)
  *
@@ -23,6 +24,7 @@ public class TipCalculator {
      *  and adjust your test data.
      */
     public double calculateTip(double bill, int percentage) {
+
         float decimalPercent = ((float) percentage / 100); // Turns our integer percentage into a decimal
         // With the true decimal calculated, the below calculates the tip and rounds to two decimal places
         return (double) Math.round((decimalPercent * bill) * 100) / 100;
